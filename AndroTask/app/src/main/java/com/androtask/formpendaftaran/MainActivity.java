@@ -319,7 +319,7 @@ public class MainActivity extends AppCompatActivity {
                         + "&province=" + URLEncoder.encode((String) params[7], "UTF-8")
                         + "&city=" + URLEncoder.encode((String) params[8], "UTF-8");
 
-                byte[] image = (byte[])params[9];
+//                byte[] image = (byte[])params[9];
 
 //                 Menyertakan data gambar dalam permintaan
 //                conn.setRequestProperty("Content-Type", "application/octet-stream");
