@@ -292,7 +292,7 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
-        new SendDataToServer().execute(schoolName, address, postalCode, phoneNumber, email, numberOfStudents, schoolType, province, city, compressImage(mCurrentPhotoPath));
+        new SendDataToServer().execute(schoolName, address, postalCode, phoneNumber, email, numberOfStudents, schoolType, province, city);
 
     }
 
@@ -322,9 +322,9 @@ public class MainActivity extends AppCompatActivity {
                 byte[] image = (byte[])params[9];
 
 //                 Menyertakan data gambar dalam permintaan
-                conn.setRequestProperty("Content-Type", "application/octet-stream");
-                conn.setRequestProperty("Content-Length", String.valueOf(Base64.encodeToString(image, Base64.DEFAULT).length()));
-                conn.getOutputStream().write(Base64.encodeToString(image, Base64.DEFAULT).getBytes());
+//                conn.setRequestProperty("Content-Type", "application/octet-stream");
+//                conn.setRequestProperty("Content-Length", String.valueOf(Base64.encodeToString(image, Base64.DEFAULT).length()));
+//                conn.getOutputStream().write(Base64.encodeToString(image, Base64.DEFAULT).getBytes());
 
                 // Mengirim data ke server
                 OutputStream os = conn.getOutputStream();

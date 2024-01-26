@@ -25,7 +25,7 @@ $numberOfStudents = $_POST['numberOfStudents'];
 $schoolType = $_POST['schoolType'];
 $province = $_POST['province'];
 $city = $_POST['city'];
-$imageData = $_POST['imageData']; // Assuming imageData is sent as base64 string
+//$imageData = $_POST['imageData']; // Assuming imageData is sent as base64 string
 
 // // Function to handle image upload and return the path
 // function uploadImage($imageData) {
@@ -36,8 +36,8 @@ $imageData = $_POST['imageData']; // Assuming imageData is sent as base64 string
 //     return $targetPath;
 // }
 
-// Call uploadImage function to upload and get the image path
-$imagePath = uploadImage($imageData);
+//// Call uploadImage function to upload and get the image path
+//$imagePath = uploadImage($imageData);
 
 // Insert data into MySQL database
 $sql = "INSERT INTO tsekolah (nama_sekolah, alamat, kode_pos, nomor_telepon, email, jumlah_siswa, jenis_sekolah, provinsi, kota) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
