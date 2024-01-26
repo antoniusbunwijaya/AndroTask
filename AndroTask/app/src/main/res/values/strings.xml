@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">FormPendaftaran</string>
+
+    <string-array name="school_types">
+        <item>Negeri</item>
+        <item>Swasta</item>
+    </string-array>
+
+    <string-array name="provinces">
+        <item>Jawa Barat</item>
+        <item>Jawa Tengah</item>
+        <item>Jawa Timur</item>
+    </string-array>
+
+
+</resources>
+
